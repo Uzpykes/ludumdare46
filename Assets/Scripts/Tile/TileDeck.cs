@@ -146,7 +146,7 @@ public class TileDeck : MonoBehaviour
     {
         return new BoardTile(TileType.Capital, "Capital", null,
             new List<ResourceTuple>(){new ResourceTuple(ResourceType.Grain, 1), new ResourceTuple(ResourceType.Prosperity, 1)},
-            new List<ResourceTuple>(){new ResourceTuple(ResourceType.Grain, 1)});
+            new List<ResourceTuple>(){new ResourceTuple(ResourceType.Grain, 1), new ResourceTuple(ResourceType.Bread, 1)});
     }
 
     

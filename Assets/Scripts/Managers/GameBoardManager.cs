@@ -39,7 +39,7 @@ public class GameBoardManager : MonoBehaviour
         {
             GameState.Victory = true;
             var prospVal =  ResourceManager.instance.Resources.Find(x => {return x.ResourceInfo.Type == ResourceType.Prosperity; }).ResourceInfo.Count;
-            EndGameManager.SetResult("Victory!", $"You've finised with {prospVal} <b>Prosperity</b>");
+            EndGameManager.SetResult("You're On A Roll!", $"You've finised with {prospVal} <b>Prosperity</b>");
             EndGameManager.Show();
             return;
         }
@@ -63,7 +63,7 @@ public class GameBoardManager : MonoBehaviour
         if (ResourceManager.instance.HasLooseCondition())
         {
             GameState.Loss = true;
-            EndGameManager.SetResult("Defeat.", $"You've lost on <b>Year {GameState.CurrentTurn}</b>");
+            EndGameManager.SetResult("You're Toast!", $"You've lost on <b>Year {GameState.CurrentTurn}</b>");
             EndGameManager.Show();
             return;
         }

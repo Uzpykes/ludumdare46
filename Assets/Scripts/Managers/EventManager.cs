@@ -171,7 +171,7 @@ public class EventManager : MonoBehaviour
         OnCardPicked.Invoke();
         yield return new WaitForSeconds(0.1f); //hax lol, won't work if frame takes longer than 0.1f
         cardBehaviour.hoverHandler.Type = HoverReactionType.Shift;
-        cardBehaviour.hoverHandler.MoveOnHover = new Vector3(0, 45, 0);
+        cardBehaviour.hoverHandler.MoveOnHover = new Vector3(0, 25, 0);
         ExecuteDrawEvents();
         RemoveExpiredEffects();
     }
