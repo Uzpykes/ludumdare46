@@ -58,13 +58,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8773585, g: 0.21933962, b: 0.21933962, a: 1}
+  m_Color: {r: 0.7647059, g: 0.39215687, b: 0.39215687, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: -5993112012373322873, guid: b4b12ca502d5d614d944edf1b79fcd1c,
+    type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -72,7 +73,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 2.5
 --- !u!1 &1157823773
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,7 +203,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -39.835815, y: 0, z: -39.73291, w: 0}
   m_textInfo:
     textComponent: {fileID: 1157823775}
     characterCount: 4
@@ -293,8 +294,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: -5993112012373322873, guid: b4b12ca502d5d614d944edf1b79fcd1c,
+    type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -302,7 +304,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 2.5
 --- !u!1 &1446974869
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,13 +365,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6509434, g: 0.23028658, b: 0.23028658, a: 1}
+  m_Color: {r: 0.7647059, g: 0.39215687, b: 0.39215687, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: -5993112012373322873, guid: b4b12ca502d5d614d944edf1b79fcd1c,
+    type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -377,7 +380,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 2.5
 --- !u!114 &1446974873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -674,6 +677,7 @@ MonoBehaviour:
   Image: {fileID: 896098787}
   Description: {fileID: 1657793414}
   EffectsHolder: {fileID: 3366239634058171546}
+  hoverHandler: {fileID: 0}
 --- !u!114 &6749784564289762831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -700,9 +704,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0595615aeacf3e74fb3eb52e07eea78d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnClickEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &8758732465624024319
 GameObject:
   m_ObjectHideFlags: 0

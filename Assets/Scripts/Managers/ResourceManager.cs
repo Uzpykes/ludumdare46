@@ -43,7 +43,6 @@ public class ResourceManager : MonoBehaviour
             r.ResourceInfo.Count -= prod.Count;
             if (r.ResourceInfo.Count < 0)
             {
-                Debug.Log($"{r.ResourceInfo.Type} dropped bellow zero.");
                 instance.Resources.Find(x => {return x.ResourceInfo.Type == ResourceType.Prosperity;}).ResourceInfo.Count--;
                 r.ResourceInfo.Count = 0;
             }

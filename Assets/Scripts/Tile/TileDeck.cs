@@ -26,14 +26,14 @@ public class TileDeck : MonoBehaviour
         var tileList = new List<BoardTile>();
 
         //Add fields
-        for (var i = 0; i < 5; i++)
+        for (var i = 0; i < 9; i++)
             tileList.Add(new BoardTile(TileType.Field, "Field", 
                 new List<ResourceTuple>() { new ResourceTuple(ResourceType.Prosperity, 1)},
-                new List<ResourceTuple>() { new ResourceTuple(ResourceType.Grain, 1) },
+                new List<ResourceTuple>() { new ResourceTuple(ResourceType.Grain, 2) },
                 null
             ));
         tileList.Add(new BoardTile(TileType.Field, "Magnificient Field", new List<ResourceTuple>() { new ResourceTuple(ResourceType.Prosperity, 3)},
-            new List<ResourceTuple>() { new ResourceTuple(ResourceType.Grain, 2) },
+            new List<ResourceTuple>() { new ResourceTuple(ResourceType.Grain, 3) },
             null
         ));
         // End add fields
@@ -52,7 +52,7 @@ public class TileDeck : MonoBehaviour
         //End add lake
 
         //Add roads
-        for (var i = 0; i < 4; i++)
+        for (var i = 0; i < 3; i++)
             tileList.Add(new BoardTile(TileType.Road, "Road", new List<ResourceTuple>() { new ResourceTuple(ResourceType.Prosperity, 1)},
                 null,
                 null
@@ -73,8 +73,8 @@ public class TileDeck : MonoBehaviour
         //end add forests
 
         //Add mines
-        for (var i = 0; i < 2; i++)
-            tileList.Add(new BoardTile(TileType.Mine, " Mixed Mine", new List<ResourceTuple>() { new ResourceTuple(ResourceType.Prosperity, 2)},
+        for (var i = 0; i < 1; i++)
+            tileList.Add(new BoardTile(TileType.Mine, "Mixed Mine", new List<ResourceTuple>() { new ResourceTuple(ResourceType.Prosperity, 2)},
                 new List<ResourceTuple>(){new ResourceTuple(ResourceType.Clay, 1), new ResourceTuple(ResourceType.Iron, 1)},
                 new List<ResourceTuple>(){new ResourceTuple(ResourceType.Bread, 1)}
             ));
@@ -92,42 +92,42 @@ public class TileDeck : MonoBehaviour
             ));
         //end add forests
 
-        tileList.Add(new BoardTile(TileType.Village, "Village 1", new List<ResourceTuple>() { new ResourceTuple(ResourceType.Prosperity, 3)},
+        tileList.Add(new BoardTile(TileType.Village, "Wjlkmerge", new List<ResourceTuple>() { new ResourceTuple(ResourceType.Prosperity, 3)},
             new List<ResourceTuple>(){new ResourceTuple(ResourceType.Bread, 3)},
             new List<ResourceTuple>(){new ResourceTuple(ResourceType.Bread, 1)}
         ));
 
-        tileList.Add(new BoardTile(TileType.Village, "Village 2", new List<ResourceTuple>() { new ResourceTuple(ResourceType.Prosperity, 1)},
+        tileList.Add(new BoardTile(TileType.Village, "Wjlkavjskjs", new List<ResourceTuple>() { new ResourceTuple(ResourceType.Prosperity, 1)},
             new List<ResourceTuple>(){new ResourceTuple(ResourceType.Bread, 1), new ResourceTuple(ResourceType.Cloth, 1)},
             new List<ResourceTuple>(){new ResourceTuple(ResourceType.Bread, 1)}
         ));
 
-        tileList.Add(new BoardTile(TileType.Village, "Village 3", new List<ResourceTuple>() { new ResourceTuple(ResourceType.Prosperity, 1)},
+        tileList.Add(new BoardTile(TileType.Village, "Kedajnjaj", new List<ResourceTuple>() { new ResourceTuple(ResourceType.Prosperity, 1)},
             new List<ResourceTuple>(){new ResourceTuple(ResourceType.Brick, 2)},
             new List<ResourceTuple>(){new ResourceTuple(ResourceType.Bread, 1), new ResourceTuple(ResourceType.Clay, 1)}
         ));
 
-        tileList.Add(new BoardTile(TileType.SmolCity, "City 1", new List<ResourceTuple>() { new ResourceTuple(ResourceType.Prosperity, 3)},
+        tileList.Add(new BoardTile(TileType.SmolCity, "Sjauljaj", new List<ResourceTuple>() { new ResourceTuple(ResourceType.Prosperity, 3)},
             new List<ResourceTuple>(){new ResourceTuple(ResourceType.Brick, 4)},
             new List<ResourceTuple>(){new ResourceTuple(ResourceType.Bread, 3), new ResourceTuple(ResourceType.Clay, 2)}
         ));
 
-        tileList.Add(new BoardTile(TileType.SmolCity, "City 2", new List<ResourceTuple>() { new ResourceTuple(ResourceType.Prosperity, 3)},
+        tileList.Add(new BoardTile(TileType.SmolCity, "Bjrstonas", new List<ResourceTuple>() { new ResourceTuple(ResourceType.Prosperity, 3)},
             new List<ResourceTuple>(){new ResourceTuple(ResourceType.Beer, 4)},
             new List<ResourceTuple>(){new ResourceTuple(ResourceType.Bread, 3), new ResourceTuple(ResourceType.Grain, 1)}
         ));
 
-        tileList.Add(new BoardTile(TileType.SmolCity, "City 3", new List<ResourceTuple>() { new ResourceTuple(ResourceType.Prosperity, 3)},
+        tileList.Add(new BoardTile(TileType.SmolCity, "Klajpeda", new List<ResourceTuple>() { new ResourceTuple(ResourceType.Prosperity, 3)},
             new List<ResourceTuple>(){new ResourceTuple(ResourceType.Cloth, 4)},
             new List<ResourceTuple>(){new ResourceTuple(ResourceType.Beer, 1)}
         ));
 
-        tileList.Add(new BoardTile(TileType.LargeCity, "Large City 1", new List<ResourceTuple>() { new ResourceTuple(ResourceType.Prosperity, 3)},
+        tileList.Add(new BoardTile(TileType.LargeCity, "Wilnjus", new List<ResourceTuple>() { new ResourceTuple(ResourceType.Prosperity, 3)},
             new List<ResourceTuple>(){new ResourceTuple(ResourceType.Prosperity, 4)},
             new List<ResourceTuple>(){new ResourceTuple(ResourceType.Beer, 2), new ResourceTuple(ResourceType.Iron, 1), new ResourceTuple(ResourceType.Grain, 2)}
         ));
 
-        tileList.Add(new BoardTile(TileType.LargeCity, "Large City 2", new List<ResourceTuple>() { new ResourceTuple(ResourceType.Prosperity, 3)},
+        tileList.Add(new BoardTile(TileType.LargeCity, "Kawnas", new List<ResourceTuple>() { new ResourceTuple(ResourceType.Prosperity, 3)},
             new List<ResourceTuple>(){new ResourceTuple(ResourceType.Prosperity, 4), new ResourceTuple(ResourceType.Beer, 4)},
             new List<ResourceTuple>(){new ResourceTuple(ResourceType.Cloth, 2), new ResourceTuple(ResourceType.Iron, 2), new ResourceTuple(ResourceType.Grain, 2)}
         ));
@@ -146,7 +146,7 @@ public class TileDeck : MonoBehaviour
     {
         return new BoardTile(TileType.Capital, "Capital", null,
             new List<ResourceTuple>(){new ResourceTuple(ResourceType.Grain, 1), new ResourceTuple(ResourceType.Prosperity, 1)},
-            new List<ResourceTuple>(){new ResourceTuple(ResourceType.Grain, 1), new ResourceTuple(ResourceType.Bread, 1)});
+            new List<ResourceTuple>(){new ResourceTuple(ResourceType.Grain, 1)});
     }
 
     
