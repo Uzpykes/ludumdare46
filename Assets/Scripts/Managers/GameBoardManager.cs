@@ -23,8 +23,10 @@ public class GameBoardManager : MonoBehaviour
 
     public void Awake()
     {
+        Debug.Log("build board");
         Container.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
         Container.constraintCount = BoardDimensions.x;
+        tileHolders = new List<TileHolderBehaviour>();
         for (var i = 0; i < BoardDimensions.x * BoardDimensions.y; i++)
         {
             var holder = Instantiate(TileHolderPrefab.gameObject, Container.transform).GetComponent<TileHolderBehaviour>();
